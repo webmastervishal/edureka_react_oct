@@ -1,0 +1,21 @@
+Configure Env
+
+1. Install node js - https://nodejs.org/en/
+2. Install vs code - https://code.visualstudio.com/
+3. Create react app - https://reactjs.org/docs/create-a-new-react-app.html
+4. NPM repo - https://www.npmjs.com/
+5. Babel - https://babeljs.io/
+6. Webpack - https://webpack.js.org/
+7. w3schools - https://www.w3schools.com/
+8. Internshala - https://internshala.com/
+9. Check browser compatibility - https://caniuse.com/
+
+/* ====================== * /
+Check Node & NPM version: 
+
+node -v
+npm -v
+
+
+
+Code repository: https://github.com/webmastervishal/edureka-react-oct
