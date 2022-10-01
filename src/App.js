@@ -1,9 +1,8 @@
 import "./App.css";
-import CounterContainer from "./counter/Container";
-import Form from "./Form";
+import AppRoute from "./routes/AppRoute";
 
 function App() {
-  return <Form />;
+  return <AppRoute />;
 }
 
 export default App;

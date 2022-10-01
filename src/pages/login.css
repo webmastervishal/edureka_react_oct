@@ -1,0 +1,16 @@
+#login-button {
+  height: 35px;
+  width: 80px;
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+}
+
+.input-style {
+  display: block;
+  width: 80%;
+  height: 30px;
+  margin: 10px;
+}
