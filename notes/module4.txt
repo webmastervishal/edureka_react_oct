@@ -1,0 +1,8 @@
+https://reactjs.org/docs/lifting-state-up.html
+https://redux.js.org/
+https://react-redux.js.org/
+
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+https://github.com/zalmoxisus/redux-devtools-extension
+
+https://www.npmjs.com/package/json-server

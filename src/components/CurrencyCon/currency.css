@@ -1,0 +1,21 @@
+#wrapper {
+  border: 1px solid #c7c7c7;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+#input-style {
+  width: 90%;
+  margin: 10px;
+  height: 20px;
+}
+
+#item-style {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  width: 365px;
+  border-radius: 5px;
+  margin: 10px;
+}
