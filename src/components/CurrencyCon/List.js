@@ -1,7 +1,7 @@
 import React from "react";
 import Item from "./Item";
 import { connect } from "react-redux";
-import { storeCurrencies } from "./actions";
+import { fetchCurrencies } from "./actions";
 import Cookies from "js-cookie";
 
 class List extends React.Component {
@@ -28,19 +28,7 @@ class List extends React.Component {
   }
 
   async componentDidMount() {
-    const res = await fetch(
-      "https://webmaster-fake-api.herokuapp.com/currencies",
-      {
-        method: "GET",
-        headers: {
-          Authorization: "Bearer " + Cookies.get("token"),
-        },
-      }
-    );
-
-    const result = await res.json();
-    // console.log("result", result);
-    this.props.storeCurrencies(result);
+    this.props.fetchCurrencies();
   }
 }
 
@@ -52,7 +40,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-  storeCurrencies: storeCurrencies,
+  fetchCurrencies: fetchCurrencies,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(List);
