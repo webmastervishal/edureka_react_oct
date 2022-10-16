@@ -12,6 +12,7 @@ function Counter() {
 
   const data = useContext(UserContext);
   const inputRef = useRef();
+  const buttonRef = useRef();
 
   async function fetchApi() {
     const res = await fetch(
@@ -33,6 +34,7 @@ function Counter() {
 
     inputRef.current.focus();
     inputRef.current.style.height = "25px";
+    buttonRef.current.style.height = "50px";
     //open connection to the websocket
 
     // let time = 1;
@@ -58,24 +60,28 @@ function Counter() {
   }, [count]);
 
   function displayMessage() {
-    console.log("calling display message....");
+    // console.log("calling display message....");
     return <h1>Display message...</h1>;
   }
 
   return (
     <MasterLayout>
-      <h2>Username is: {data.username}</h2>
+      {/* <h2>Username is: {data.username}</h2> */}
       <button onClick={() => data.setUsername("Vishal Shetty")}>
         Change the name
       </button>
       {show && (
         <>
-          <h1>Count: {count}</h1>
-          <button onClick={() => setCount(count + 1)}>+</button>
+          <h1 id="counter">Count: {count}</h1>
+          <button id="increment" onClick={() => setCount(count + 1)}>
+            +
+          </button>
           <button onClick={() => setCount(count - 1)}>-</button>
         </>
       )}
-      <button onClick={() => setShow(!show)}>show/hide</button>
+      <button ref={buttonRef} onClick={() => setShow(!show)}>
+        show/hide
+      </button>
       {/* {numbers.map((num) => (
         <p>{num}</p>
       ))} */}

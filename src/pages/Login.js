@@ -6,8 +6,6 @@ class Login extends React.Component {
   constructor(props) {
     super(props);
 
-    console.log("props", props);
-
     this.state = {
       email: "",
       password: "",
@@ -78,7 +76,7 @@ class Login extends React.Component {
     return (
       <div
         style={{
-          border: "1px solid #c7c7c7",
+          border: "1px solid #778787",
           padding: "10px",
           margin: "auto",
           width: "50%",
@@ -103,6 +101,7 @@ class Login extends React.Component {
             onChange={this.handlePassword}
             value={this.state.password}
           />
+
           <button
             id="login-button"
             style={{
